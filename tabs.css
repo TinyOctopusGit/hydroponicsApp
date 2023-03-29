@@ -1,0 +1,51 @@
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border-top: 2px solid #379683;
+    border-bottom: 2px solid #379683;
+    background-color: #EDF5E1;
+    font-family: Nunito;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #379683;
+    padding: 4px 6px;
+    transition: 0.3s;
+    font-size: x-large;
+    width: 33.3333%;
+    font-family: Nunito;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #379683d5;
+    color: #EDF5E1;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #379683;
+    color: #EDF5E1;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    text-align: center;
+    display: none;
+    padding: 6px 12px;
+    border: none;
+  }
+
+/*Color Scheme
+Dark Blue - #05386B
+Dark - #379683
+Mid/BG - #5CDB95
+Light - #8EE4AF
+White - #EDF5E1
+*/

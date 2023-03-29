@@ -1,0 +1,249 @@
+/* Wifi Change Form */
+
+.wifiForm::placeholder{
+    color:#EDF5E1;
+    background-color: #edf5e146;
+}
+
+.wifiForm button{
+    width: auto;
+    padding: 8px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #EDF5E1;
+    color: #EDF5E1;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ffffff00;
+    border-radius: 10000px;
+    transition: 0.5s;
+}
+
+.wifiForm input[type=text] {
+    padding: 8px 12px;
+    margin: 8px 0;
+    border: 2px solid #EDF5E1;
+    color: #EDF5E1;
+    border-radius: 4px;
+    background-color: #ffffff00;
+    border-radius: 10000px;
+    transition: 0.5s;
+}
+.wifiForm input[type=password] {
+    padding: 8px 12px;
+    margin: 8px 0;
+    border: 2px solid #EDF5E1;
+    color: #EDF5E1;
+    border-radius: 4px;
+    background-color: #ffffff00;
+    border-radius: 10000px;
+    transition: 0.5s;
+}
+
+.wifiForm input[type=text]:focus {
+    background-color: #edf5e165;
+}
+
+.wifiForm input[type=password]:focus {
+    background-color: #edf5e165;
+}
+
+.wifiForm input[type=password]::placeholder {
+    color: #edf5e1c7;
+}
+
+.wifiForm input[type=text]::placeholder {
+    color: #edf5e1c7;
+}
+
+.wifiForm button:hover {
+    background-color: #edf5e165;
+}
+
+/* Change password */
+/* Add padding and center-align text to the container */
+.container {
+    padding: 16px;
+    text-align: center;
+}
+  
+/* Float cancel and change buttons and add an equal width */
+.cancelbtn {
+    float: left;
+    color: #379683;
+    padding: 2%;
+    border: 2px solid;
+    border-radius: 1000000px;
+    font-size: x-large;
+    margin-bottom: 10px;
+    background-color: #EDF5E1;
+    transition: .3s;
+}
+.changebtn {
+    float: right;
+    background-color: #379683;
+    color: #EDF5E1;
+    padding: 2%;
+    border: 2px solid #37968300;
+    border-radius: 1000000px;
+    font-size: x-large;
+    opacity: .8;
+    transition: .3s;
+}
+
+.changebtn:hover {
+    background-color: #37968350;
+    border: 2px solid #379683;
+    color: #379683;
+}
+.cancelbtn:hover {
+    background-color: #37968350;
+    border: 2px solid #379683;
+    color: #379683;
+}
+  
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #379683cb;
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #EDF5E1;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    width: 30%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #EDF5E1;
+    margin-bottom: 25px;
+}
+
+/* The Modal Close Button (x) */
+.close {
+    position: absolute;
+    right: 33%;
+    top: 9%;
+    font-size: 40px;
+    font-weight: bold;
+    color: #EDF5E1;
+    opacity: 1;
+    transition: .3s;
+}
+
+.close:hover, .close:focus {
+    opacity: .8;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and change button on extra small screens */
+@media screen and (max-width: 1000px) {
+.cancelbtn, .changebtn {
+    width: 100%;
+    padding: .5%;
+}
+.modal-content .addDevice{
+    width: 80%;
+}
+.close {
+    right: 5%;
+    top: 5%;
+}
+}
+
+/* Add Device Form */
+
+.addDevice {
+    padding: 10px;
+}
+
+
+/* Set a style for all buttons */
+.addDevice button {
+    cursor: pointer;
+    width: 95%;
+    background-color: #379683;
+    color: #EDF5E1;
+    padding: 0px;
+    border: 2px solid #37968300;
+    border-radius: 1000000px;
+    opacity: .8;
+    transition: .3s;
+    text-align: left;
+    margin-top: 5px;
+    position: relative;
+    min-height: max-content;
+
+}
+
+.addDevice p {
+    padding: 0px;
+    margin: 0px;
+    font-size: x-large;
+    margin-left: 10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    /* margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.addDevice img {
+    height: 100%;
+    
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    /* display: flex;
+    justify-content: right;
+    align-items: center; */
+}
+
+  
+.addDevice button:hover {
+    opacity: 1;
+}
+
+/* Change styles for cancel button and change button on extra small screens */
+@media screen and (max-width: 1000px) {
+    .addDevice{
+        width: 80%;
+    }
+}
+
+/*Color Scheme
+Dark Blue - #05386B
+Dark - #379683
+Mid/BG - #5CDB95
+Light - #8EE4AF
+White - #EDF5E1
+*/
