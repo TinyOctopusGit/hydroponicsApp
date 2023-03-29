@@ -160,7 +160,7 @@ hr {
     width: 100%;
     padding: .5%;
 }
-.modal-content .addDevice{
+.modal-content, .addDevice{
     width: 80%;
 }
 .close {

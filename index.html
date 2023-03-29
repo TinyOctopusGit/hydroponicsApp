@@ -73,12 +73,15 @@
       <button class="tablinks" onclick="openCity(event, 'Devices')">Devices</button>
       <button class="tablinks" onclick="openCity(event, 'Automation')">Automation</button>
     </div>
+
+      <!-- Overview Tab -->
       <div id="Overview" class="tabcontent">
         <h2>Overview</h2>
         <p>Overview of all systems.</p>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       </div>
       
+      <!-- Device Tab -->
       <div id="Devices" class="tabcontent">
         <div >
           <h2>Devices</h2>
@@ -86,25 +89,36 @@
         </div>
         <p>View, edit, or add devices</p> 
 
-
-        <div id="id02" class="modal">
-          <div class="modal-content addDevice">
-            <div>
-              <b style="font-size: x-large;">Select Device</b>
-              <a onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</a>
-              <button onclick="SPV1()">
-                <p>Smart Pump V1 </p> <img src="watering.png">
-              </button>
-              <button onclick="SPV2()"><p style="vertical-align: middle; display: inline-block;">Smart Pump V2 </p> <img src="watering.png" style=" vertical-align:middle; "></button>
+          <div id="id02" class="modal">
+            <div class="modal-content addDevice">
+              <div>
+                <b style="font-size: x-large;">Select Device</b>
+                <a onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</a>
+                <button onclick="SPV1()"><p>Smart Pump V1 </p> <img src="watering.png"></button>
+                <button onclick="SPV2()"><p>Smart Pump V2 </p> <img src="watering.png"></button>
+              </div>
             </div>
           </div>
-        </div>
-        
       </div>
       
+      <!-- Automation Tab -->
       <div id="Automation" class="tabcontent">
-        <h2>Automation</h2>
-        <p>View, edit, or change automations.</p>
+        <div >
+          <h2>Automations</h2>
+          <span onclick="document.getElementById('id03').style.display='block'" class="sameline"><i class="fa-regular fa-square-plus"></i></span>
+        </div>
+        <p>View, edit, or add automations</p> 
+
+          <div id="id03" class="modal">
+            <div class="modal-content addDevice">
+              <div>
+                <b style="font-size: x-large;">Create New Automation</b>
+                <a onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</a>
+                
+              </div>
+            </div>
+          </div>
+        
       </div>
     <!--  -->
     
@@ -205,5 +219,18 @@
           }
       }
       </script>
+
+      <script>
+        // Get the modal
+        var modal = document.getElementById('id03');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+      </script>
+
   </body>
 </html>
