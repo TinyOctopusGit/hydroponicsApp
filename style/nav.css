@@ -1,0 +1,80 @@
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: #379683;
+  overflow-x: hidden;
+  transition: 0.5s;
+  color: #EDF5E1;
+}
+
+.overlay-content {  
+  position: relative;
+  top: 2%;
+  width: 100%;
+  text-align: center;
+  margin-top: 0 px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: xx-large;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  opacity:.8;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 1px;
+  right: 35.5px;
+  z-index: 5;
+  font-size: 50px;
+  color: #EDF5E1;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+/* Create a top navigation bar with a black background color  */
+.topnav {
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #379683;
+  text-align: center;
+  padding: 25px 45px;
+  text-decoration: none;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav a.split {
+  float: right;
+}
+
+/*Color Scheme
+Dark Blue - #05386B
+Dark - #379683
+Mid/BG - #5CDB95
+Light - 8EE4AF
+White - #EDF5E1
+*/

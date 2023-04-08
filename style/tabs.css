@@ -1,0 +1,181 @@
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border-top: 2px solid #379683;
+    border-bottom: 2px solid #379683;
+    background-color: var(--bg-color);
+    font-family: Nunito;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #379683;
+    padding: 4px 6px;
+    transition: 0.3s;
+    font-size: x-large;
+    width: 33.3333%;
+    font-family: Nunito;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #379683d5;
+    color: var(--bg-color);
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #379683;
+    color: var(--bg-color);
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    text-align: center;
+    display: none;
+    padding: 6px 12px;
+    border: none;
+  }
+
+.tabcontentbutton {
+  color: lightgray;
+  transition: 3s;
+}
+
+.tabcontentbutton:hover {
+  color: gray;
+}
+
+/* Device Tab */
+.deviceCard {
+  width: 95%; 
+  border-radius: 20px; 
+  margin: auto; 
+  text-align: left; 
+  padding: 10px; 
+  background-color: var(--bg-color);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  
+}
+
+/* Float columns side by side */
+.columnCards {
+  float: left;
+  width: calc(41.5vw);
+  padding: 0 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.rowCards {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.rowCards:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 800px) {
+  .columnCards {
+    width: 95%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.cardColumn {
+  border: solid 3px lightgray;
+  padding: 16px;
+  text-align: center;
+  background-color: var(--bg-color);
+  border-radius: 20px;
+}
+
+/* Automation Tabs */
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+  border-radius: 1000px;
+}
+
+details {
+  width: 95%;
+  min-height: 5px;
+  padding: 20px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 22px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  transition: all .3s;
+  text-align: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+details + details {
+  margin-top: 20px;
+}
+
+details[open] {
+  min-height: 50px;
+  background-color: var(--bg-color);
+  box-shadow: 2px 2px 20px rgba(0,0,0,.2);
+}
+
+details p {
+  color: #96999d;
+  font-weight: 300;
+}
+
+
+summary {
+  display: flex;
+  justify-content:space-between;
+  align-items: right;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  transition: 3s;
+}
+
+summary:focus {
+  outline: none;
+  
+}
+
+summary::-webkit-details-marker {
+  display: none
+}
+
+
+.control-icon-close {
+  display: none;
+}
+
+details[open] .control-icon-close {
+  display: initial;
+  transition: .3s ease;
+  margin-bottom: 10px;
+}
+
+details[open] .control-icon-expand {
+  display: none;
+}
+
+
+/*Color Scheme
+Dark Blue - #05386B
+Dark - #379683
+Mid/BG - #5CDB95
+Light - #8EE4AF
+White - #EDF5E1
+*/
